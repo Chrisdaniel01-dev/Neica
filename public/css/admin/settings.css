@@ -1,0 +1,39 @@
+/* ============================================
+   SETTINGS PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Settings sections */
+.settings-section {
+  background: var(--color-surface);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.settings-group {
+  display: grid;
+  gap: var(--space-md);
+}
+
+/* ============================================
+   SETTINGS SPECIFIC
+   ============================================ */
+.settings-section {
+  margin-bottom: var(--space-xl);
+}
+
+.settings-section__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.settings-section__title i {
+  color: var(--color-primary);
+}
+
+

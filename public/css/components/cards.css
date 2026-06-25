@@ -1,0 +1,183 @@
+/* ===========================================
+   MISSION SECTION
+   =========================================== */
+.mission {
+    background: var(--white);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.04);
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.icon-education { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.icon-health { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; }
+.icon-community { background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%); color: white; }
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
+.card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.card-link:hover {
+    color: var(--primary-dark);
+    gap: 8px;
+}
+
+.card-sm {
+    padding: 20px;
+}
+
+.card-md {
+    padding: 30px;
+}
+
+.card-lg {
+    padding: 40px;
+}
+
+.card-center {
+    text-align: center;
+}
+
+
+/* ===========================================
+   PROJECTS PREVIEW
+   =========================================== */
+.projects-preview {
+    background: var(--light);
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-image {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.project-card.featured .project-image {
+    height: 260px;
+}
+
+.project-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--white);
+    color: var(--text);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-badge.success {
+    background: #11998e;
+    color: var(--white);
+}
+
+.project-info {
+    padding: 24px;
+}
+
+.project-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.project-progress {
+    margin-top: 16px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent) 0%, #ff8533 100%);
+    border-radius: 4px;
+    transition: width 1s ease;
+}
+
+.progress-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+}
+

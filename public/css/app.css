@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* BASE */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+
+/* LAYOUT */
+@import './layout/navbar.css';
+@import './layout/footer.css';
+
+/* COMPONENTS */
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+
+/* SECTIONS */
+@import './sections/hero.css';
+@import './sections/mission.css';
+@import './sections/impact.css';
+@import './sections/projects.css';
+@import './sections/testimonials.css';
+@import './sections/cta.css';
+
+/* PAGES */
+@import './pages/home.css';
+@import './pages/about.css';
+@import './pages/contact.css';
+@import './pages/donate.css';
+@import './pages/blog.css';
+@import './pages/blog-show.css';
+@import './pages/project-show.css';
+@import './pages/project.css';
+@import './pages/volunteer.css';
+
+/* ADMIN DASHBOARD STYLES */
+@import './admin/common.css';
+@import './admin/dashboard.css';
+@import './admin/blog.css';
+@import './admin/dons.css';
+@import './admin/messages.css';
+@import './admin/project.css';
+@import './admin/projects.css';
+@import './admin/settings.css';

@@ -1,0 +1,22 @@
+/* ============================================
+   PROJECTS PAGE-SPECIFIC STYLES
+   Project table page enhancements
+   ============================================ */
+
+/* Projects table specific overrides */
+.data-table.projects-table th:nth-child(5) {
+  width: 120px;
+}
+
+.data-table.projects-table .badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+}
+
+/* Additional projects page styles */
+.projects-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* More can be added as needed */

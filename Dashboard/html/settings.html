@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramètres — NEICA Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/settings.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" role="navigation" aria-label="Navigation principale">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-icon">N</div>
+        <span>NEICA</span>
+      </div>
+
+      <ul class="sidebar__nav">
+        <li class="sidebar__nav-item">
+          <a href="./dashboard.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-th-large"></i></span>
+            Tableau de bord
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./projects.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-folder-open"></i></span>
+            Projets
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./blogs.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-newspaper"></i></span>
+            Blogs
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./volunteers.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-user-friends"></i></span>
+            Bénévoles
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./dons.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-hand-holding-heart"></i></span>
+            Dons
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./messages.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-envelope"></i></span>
+            Messages
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./settings.html" class="sidebar__nav-link sidebar__nav-link--active" aria-current="page">
+            <span class="sidebar__nav-icon"><i class="fas fa-cog"></i></span>
+            Paramètre
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="#" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-sign-out-alt"></i></span>
+            Deconnexion
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar__footer">
+        &copy; 2024 NEICA
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- HEADER -->
+      <header class="header">
+        <h1 class="header__title">Paramètres</h1>
+        <div class="header__actions">
+          <div class="header__profile">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Admin profile" class="header__profile-img">
+            <span class="header__profile-name">Daniel Admin</span>
+          </div>
+          <button class="header__logout" type="button">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </button>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <section class="page-content page-content--narrow">
+
+        <div class="form-card">
+          <div class="form-card__header">
+            <h2 class="form-card__title">
+              <i class="fas fa-building form__label-icon"></i>
+              Informations de l'Association
+            </h2>
+          </div>
+
+          <form class="form" action="#" method="POST">
+
+            <div class="form__group">
+              <label class="form__label" for="assoc-name">
+                <i class="fas fa-building"></i> Nom de l'association
+              </label>
+              <input type="text" id="assoc-name" name="assoc_name" class="form__input" value="NEICA">
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="assoc-email">
+                  <i class="fas fa-envelope"></i> Email
+                </label>
+                <input type="email" id="assoc-email" name="assoc_email" class="form__input" value="contact@neica.org">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="assoc-phone">
+                  <i class="fas fa-phone"></i> Téléphone
+                </label>
+                <input type="tel" id="assoc-phone" name="assoc_phone" class="form__input" value="+225 20 21 22 23">
+              </div>
+
+            <div class="form__group">
+              <label class="form__label" for="assoc-website">
+                <i class="fas fa-globe"></i> Site Web
+              </label>
+              <input type="url" id="assoc-website" name="assoc_website" class="form__input" value="https://neica.org">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="assoc-address">
+                <i class="fas fa-map-marker-alt"></i> Adresse
+              </label>
+              <textarea id="assoc-address" name="assoc_address" class="form__textarea" rows="3">Abidjan, Côte d'Ivoire</textarea>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="assoc-theme">
+                <i class="fas fa-palette"></i> Thème
+              </label>
+              <select id="assoc-theme" name="assoc_theme" class="form__select">
+                <option value="light" selected>Clair</option>
+                <option value="dark">Sombre</option>
+              </select>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">
+                <i class="fas fa-save"></i> Enregistrer
+              </button>
+              <button type="reset" class="btn btn--secondary">Annuler</button>
+            </div>
+
+          </form>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

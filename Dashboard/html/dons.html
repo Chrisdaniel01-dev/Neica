@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dons — NEICA Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/dons.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" role="navigation" aria-label="Navigation principale">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-icon">N</div>
+        <span>NEICA</span>
+      </div>
+
+      <ul class="sidebar__nav">
+        <li class="sidebar__nav-item">
+          <a href="./dashboard.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-th-large"></i></span>
+            Tableau de bord
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./projects.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-folder-open"></i></span>
+            Projets
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./blogs.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-newspaper"></i></span>
+            Blogs
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./volunteers.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-user-friends"></i></span>
+            Bénévoles
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./dons.html" class="sidebar__nav-link sidebar__nav-link--active" aria-current="page">
+            <span class="sidebar__nav-icon"><i class="fas fa-hand-holding-heart"></i></span>
+            Dons
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./messages.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-envelope"></i></span>
+            Messages
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="./settings.html" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-cog"></i></span>
+            Paramètre
+          </a>
+        </li>
+        <li class="sidebar__nav-item">
+          <a href="#" class="sidebar__nav-link">
+            <span class="sidebar__nav-icon"><i class="fas fa-sign-out-alt"></i></span>
+            Deconnexion
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar__footer">
+        &copy; 2024 NEICA
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- HEADER -->
+      <header class="header">
+        <h1 class="header__title">Dons</h1>
+        <div class="header__actions">
+          <div class="header__profile">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Admin profile" class="header__profile-img">
+            <span class="header__profile-name">Daniel Admin</span>
+          </div>
+          <button class="header__logout" type="button">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </button>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <section class="page-content page-content--wide">
+
+        <div class="stats-grid">
+          <div class="stats-card">
+            <div class="stats-card__icon stats-card__icon--primary">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <div class="stats-card__content">
+              <div class="stats-card__number">€ 45,200</div>
+              <div class="stats-card__label">Total Dons</div>
+            </div>
+          </div>
+          <div class="stats-card">
+            <div class="stats-card__icon stats-card__icon--success">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stats-card__content">
+              <div class="stats-card__number">312</div>
+              <div class="stats-card__label">Donateurs</div>
+            </div>
+          </div>
+          <div class="stats-card">
+            <div class="stats-card__icon stats-card__icon--info">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="stats-card__content">
+              <div class="stats-card__number">28</div>
+              <div class="stats-card__label">Ce Mois</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-card__header">
+            <div>
+              <h2 class="table-card__title">Historique des Dons</h2>
+              <p class="table-card__subtitle">8 transactions au total</p>
+            </div>
+            <div class="table-card__actions">
+              <div class="search-box">
+                <i class="fas fa-search search-box__icon"></i>
+                <input type="text" class="search-box__input" placeholder="Rechercher un don...">
+              </div>
+              <a href="#" class="btn btn--primary"><i class="fas fa-plus"></i> Ajouter un Don</a>
+            </div>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Donateur</th>
+                <th>Montant</th>
+                <th>Date</th>
+                <th>Méthode</th>
+                <th>Statut</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Jean Dupont</strong></td>
+                <td>€ 500</td>
+                <td>12 Août 2024</td>
+                <td><i class="fas fa-credit-card"></i> Carte Bancaire</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Marie Lefebvre</strong></td>
+                <td>€ 1,200</td>
+                <td>10 Août 2024</td>
+                <td><i class="fas fa-university"></i> Virement</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Entreprise ABC</strong></td>
+                <td>€ 5,000</td>
+                <td>5 Août 2024</td>
+                <td><i class="fas fa-university"></i> Virement</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Sophie Martin</strong></td>
+                <td>€ 75</td>
+                <td>1 Août 2024</td>
+                <td><i class="fas fa-mobile-alt"></i> Mobile Money</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Pierre Bernard</strong></td>
+                <td>€ 250</td>
+                <td>28 Juil 2024</td>
+                <td><i class="fas fa-credit-card"></i> Carte Bancaire</td>
+                <td><span class="badge badge--ongoing">En attente</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Claire Dubois</strong></td>
+                <td>€ 150</td>
+                <td>25 Juil 2024</td>
+                <td><i class="fas fa-credit-card"></i> Carte Bancaire</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Association XYZ</strong></td>
+                <td>€ 2,000</td>
+                <td>20 Juil 2024</td>
+                <td><i class="fas fa-university"></i> Virement</td>
+                <td><span class="badge badge--completed">Complété</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Thomas Petit</strong></td>
+                <td>€ 50</td>
+                <td>15 Juil 2024</td>
+                <td><i class="fas fa-mobile-alt"></i> Mobile Money</td>
+                <td><span class="badge badge--ongoing">En attente</span></td>
+                <td>
+                  <button class="action-btn action-btn--view" title="Voir"><i class="fas fa-eye"></i></button>
+                  <button class="action-btn action-btn--edit" title="Modifier"><i class="fas fa-pen"></i></button>
+                  <button class="action-btn action-btn--delete" title="Supprimer"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
+

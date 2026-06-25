@@ -1,0 +1,18 @@
+/* ============================================
+   BLOGS PAGE-SPECIFIC STYLES
+   Blog grid enhancements
+   ============================================ */
+
+/* Blog page overrides */
+.blog-grid.blogs-page {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--space-xl);
+}
+
+.blog-card.featured {
+  grid-column: 1 / -1;
+  transform: scale(1.05);
+}
+
+/* Additional blogs page styles */
+

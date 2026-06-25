@@ -1,0 +1,19 @@
+/* ============================================
+   SETTINGS PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Settings sections */
+.settings-section {
+  background: var(--color-surface);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.settings-group {
+  display: grid;
+  gap: var(--space-md);
+}
+
+/* Additional settings styles */
+

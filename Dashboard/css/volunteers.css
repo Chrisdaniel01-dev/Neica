@@ -1,0 +1,17 @@
+/* ============================================
+   VOLUNTEERS PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Volunteers page specific styles */
+.volunteers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.volunteer-card {
+  text-align: center;
+}
+
+/* Additional volunteers styles */
+

@@ -1,0 +1,105 @@
+/* ============================================
+   MESSAGES PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Messages list enhancements */
+.message-list.messages-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-item.unread {
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Additional messages styles */
+
+/* ============================================
+   MESSAGES LIST
+   ============================================ */
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.message-item {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  transition: box-shadow var(--transition-fast);
+}
+
+.message-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.message-item__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-light), #bfdbfe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+}
+
+.message-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.message-item__name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.message-item__time {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.message-item__subject {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.message-item__preview {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message-item--unread{
+  border-left: 4px solid #2563eb;
+  background: #f8fbff;
+}
+
+.badge-danger{
+  background: #ef4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 8px;
+}

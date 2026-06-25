@@ -1,0 +1,16 @@
+/* ============================================
+   MESSAGES PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Messages list enhancements */
+.message-list.messages-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-item.unread {
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Additional messages styles */
+

@@ -1,0 +1,70 @@
+/* ===========================================
+   CTA SECTION
+   =========================================== */
+.cta {
+    background: linear-gradient(135deg, var(--primary) 0%, #667eea 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.cta p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.cta .btn-primary {
+    background: var(--white);
+    color: var(--primary);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.cta .btn-primary:hover {
+    background: var(--light);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+.cta .btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+}

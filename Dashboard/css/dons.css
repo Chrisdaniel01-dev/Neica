@@ -1,0 +1,17 @@
+/* ============================================
+   DONS (DONATIONS) PAGE-SPECIFIC STYLES
+   ============================================ */
+
+/* Donations page specific */
+.donations-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.donation-item {
+  background: linear-gradient(135deg, var(--color-success-light), var(--color-primary-light));
+}
+
+/* More donations styles */
+

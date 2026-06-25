@@ -1,0 +1,22 @@
+/* ============================================
+   PROJECT CREATE PAGE-SPECIFIC STYLES
+   Create project form enhancements
+   ============================================ */
+
+/* Form specific for project creation */
+.form-card.project-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form__row.project-goals {
+  grid-template-columns: 2fr 1fr;
+}
+
+.project-file-upload {
+  background: var(--color-bg);
+  border: 2px dashed var(--color-border);
+}
+
+/* More project form styles */
+
