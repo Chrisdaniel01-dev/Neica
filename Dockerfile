@@ -26,6 +26,9 @@ COPY . .
 # Copy nginx config
 COPY docker/nginx.conf /etc/nginx/sites-available/default
 
+# Copy Aiven CA certificate
+COPY docker/certs/ca.pem /var/www/html/storage/certs/aiven-ca.pem
+
 # Copy supervisor config
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
@@ -37,7 +40,7 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
     && chmod -R 755 /var/www/html/bootstrap/cache
 
-# Expose port (Render uses $PORT env var, default to 10000)
+# Expose port
 EXPOSE 10000
 
 # Copy entrypoint script
