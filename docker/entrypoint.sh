@@ -6,6 +6,9 @@ if [ -z "$APP_KEY" ]; then
     php artisan key:generate --force
 fi
 
+# Run package discovery at runtime instead of build time
+php artisan package:discover --ansi
+
 # Cache config, routes, views for performance
 php artisan config:cache
 php artisan route:cache

@@ -32,13 +32,6 @@ COPY docker/certs/ca.pem /var/www/html/storage/certs/aiven-ca.pem
 # Copy supervisor config
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# Prevent Laravel from connecting to DB during build
-ENV DB_CONNECTION=log
-ENV DB_HOST=127.0.0.1
-ENV DB_PORT=3306
-ENV DB_DATABASE=dummy
-ENV DB_USERNAME=dummy
-ENV DB_PASSWORD=dummy
 
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction
