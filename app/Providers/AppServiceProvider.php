@@ -19,11 +19,15 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+        public function boot(): void
     {
+        try {
             View::share(
-            'unreadMessagesCount',
-            Message::where('is_read', false)->count()
-        );
+                'unreadMessagesCount',
+                Message::where('is_read', false)->count()
+            );
+        } catch (\Exception $e) {
+            View::share('unreadMessagesCount', 0);
+        }
     }
 }
